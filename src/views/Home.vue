@@ -1,18 +1,32 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+  <div>
+    <h2>Please click one of the following components</h2>
+    <ul>
+      <li>
+        <router-link :to="{ name: 'SidebarHome' }">Sidebar</router-link>
+      </li>
+      <li>
+        <router-link :to="{ name: 'Modal' }">Modal</router-link>
+      </li>
+    </ul>
   </div>
 </template>
 
-<script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+<style>
+.content {
+  background: #eceaea;
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+}
 
-export default {
-  name: "Home",
-  components: {
-    HelloWorld,
-  },
-};
-</script>
+.header {
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.main-content {
+  padding: 10px 14px;
+}
+</style>
