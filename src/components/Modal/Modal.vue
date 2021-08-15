@@ -6,9 +6,15 @@
           <span @click="close" class="icon">
             <i class="far fa-times-circle"></i>
           </span>
-          <!-- Modal content -->
-          <slot />
-          <button @click="close">Close</button>
+          <div class="modal-header">
+            <slot name="header" />
+          </div>
+          <div class="modal-content">
+            <slot />
+          </div>
+          <div class="modal-footer">
+            <slot name="footer" />
+          </div>
         </div>
       </transition>
     </div>
@@ -65,16 +71,6 @@ export default {
 
 .icon:hover {
   color: crimson;
-}
-
-button {
-  padding: 10px 10px;
-  border: none;
-  font-size: 16px;
-  background-color: crimson;
-  color: #fff;
-  cursor: pointer;
-  border-radius: 5px;
 }
 
 .modal-animation-enter-active,

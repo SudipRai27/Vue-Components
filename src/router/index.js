@@ -3,6 +3,7 @@ import Home from "../views/Home.vue";
 import SidebarHome from "@/views/SidebarHome";
 import SidebarUsers from "@/views/SidebarUsers";
 import ModalView from "@/views/ModalView";
+import DropBoxView from "@/views/DropBoxView";
 import NotFound from "@/views/NotFound";
 
 const routes = [
@@ -25,6 +26,11 @@ const routes = [
     path: "/modal",
     name: "ModalView",
     component: ModalView,
+  },
+  {
+    path: "/drop-box",
+    name: "DropBoxView",
+    component: DropBoxView,
   },
   {
     path: "/:pathMatch(.*)*",

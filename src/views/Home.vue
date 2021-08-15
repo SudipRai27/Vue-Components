@@ -6,7 +6,10 @@
         <router-link :to="{ name: 'SidebarHome' }">Sidebar</router-link>
       </li>
       <li>
-        <router-link :to="{ name: 'Modal' }">Modal</router-link>
+        <router-link :to="{ name: 'ModalView' }">Modal</router-link>
+      </li>
+      <li>
+        <router-link :to="{ name: 'DropBoxView' }">DropBoxView</router-link>
       </li>
     </ul>
   </div>
