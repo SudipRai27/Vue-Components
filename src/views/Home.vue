@@ -9,7 +9,10 @@
         <router-link :to="{ name: 'ModalView' }">Modal</router-link>
       </li>
       <li>
-        <router-link :to="{ name: 'DropBoxView' }">DropBoxView</router-link>
+        <router-link :to="{ name: 'DropBoxView' }">DropBox</router-link>
+      </li>
+      <li>
+        <router-link :to="{ name: 'SnackBarView' }">Snack Bar</router-link>
       </li>
     </ul>
   </div>

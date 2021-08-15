@@ -1,0 +1,34 @@
+let defaults = {
+  time: 2000,
+  delay: 0,
+  text: "",
+};
+
+export default {
+  namespaced: true,
+  state: {
+    snack: null,
+  },
+  mutations: {
+    SET_SNACK(state, text) {
+      state.snack = text;
+    },
+  },
+  actions: {
+    snack({ commit }, options) {
+      options = { ...defaults, ...options };
+      setTimeout(() => {
+        commit("SET_SNACK", options.text);
+
+        setTimeout(() => {
+          commit("SET_SNACK", null);
+        }, options.time);
+      }, options.delay);
+    },
+  },
+  getters: {
+    snack(state) {
+      return state.snack;
+    },
+  },
+};
