@@ -39,6 +39,8 @@ export default {
       checkScreenSize();
     });
 
+    ///can use thie below inside local state.js as well.
+
     const checkScreenSize = () => {
       return window.innerWidth <= 550
         ? (collapsed.value = true)

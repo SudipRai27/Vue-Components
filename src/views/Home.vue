@@ -19,6 +19,9 @@
           >Responsive Navigation</router-link
         >
       </li>
+      <li>
+        <router-link :to="{ name: 'TabView' }">Tabs</router-link>
+      </li>
     </ul>
   </div>
 </template>

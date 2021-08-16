@@ -6,6 +6,7 @@ import ModalView from "@/views/ModalView";
 import DropBoxView from "@/views/DropBoxView";
 import SnackBarView from "@/views/SnackBarView";
 import NavigationView from "@/views/NavigationView";
+import TabView from "@/views/TabView";
 import NotFound from "@/views/NotFound";
 
 const routes = [
@@ -43,6 +44,11 @@ const routes = [
     path: "/navigation",
     name: "NavigationView",
     component: NavigationView,
+  },
+  {
+    path: "/tab",
+    name: "TabView",
+    component: TabView,
   },
   {
     path: "/:pathMatch(.*)*",
