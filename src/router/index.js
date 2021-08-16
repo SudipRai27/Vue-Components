@@ -5,6 +5,7 @@ import SidebarUsers from "@/views/SidebarUsers";
 import ModalView from "@/views/ModalView";
 import DropBoxView from "@/views/DropBoxView";
 import SnackBarView from "@/views/SnackBarView";
+import NavigationView from "@/views/NavigationView";
 import NotFound from "@/views/NotFound";
 
 const routes = [
@@ -37,6 +38,11 @@ const routes = [
     path: "/snack-bar",
     name: "SnackBarView",
     component: SnackBarView,
+  },
+  {
+    path: "/navigation",
+    name: "NavigationView",
+    component: NavigationView,
   },
   {
     path: "/:pathMatch(.*)*",

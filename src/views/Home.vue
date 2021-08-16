@@ -14,25 +14,13 @@
       <li>
         <router-link :to="{ name: 'SnackBarView' }">Snack Bar</router-link>
       </li>
+      <li>
+        <router-link :to="{ name: 'NavigationView' }"
+          >Responsive Navigation</router-link
+        >
+      </li>
     </ul>
   </div>
 </template>
 
-<style>
-.content {
-  background: #eceaea;
-  width: 100%;
-  height: 100vh;
-  overflow-y: scroll;
-}
 
-.header {
-  padding: 20px;
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.main-content {
-  padding: 10px 14px;
-}
-</style>

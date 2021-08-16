@@ -1,11 +1,15 @@
 <template>
   <div class="sidebar" :style="{ width: sidebarWidth }">
     <h1 class="sidebar-header">
-      <template v-if="collapsed">
-        <div>V</div>
-        <div>S</div>
-      </template>
-      <template v-else> Vue Sidebar </template>
+      <transition name="fade">
+        <div v-show="collapsed">
+          <div>V</div>
+          <div>S</div>
+        </div>
+      </transition>
+      <transition name="fade">
+        <div v-show="!collapsed">Vue Sidebar</div>
+      </transition>
     </h1>
     <SiderbarLink to="sidebar-home" icon="fas fa-users"> Home </SiderbarLink>
     <SiderbarLink to="sidebar-users" icon="fas fa-users"> Users </SiderbarLink>
@@ -24,11 +28,23 @@
 <script>
 import { collapsed, toggleSidebar, sidebarWidth } from "./state";
 import SiderbarLink from "./SidebarLink";
+import { onMounted } from "vue";
 export default {
   components: {
     SiderbarLink,
   },
   setup() {
+    onMounted(() => {
+      window.addEventListener("resize", checkScreenSize);
+      checkScreenSize();
+    });
+
+    const checkScreenSize = () => {
+      return window.innerWidth <= 550
+        ? (collapsed.value = true)
+        : (collapsed.value = false);
+    };
+
     return {
       collapsed,
       toggleSidebar,
@@ -78,5 +94,15 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
 }
 </style>
