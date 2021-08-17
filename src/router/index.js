@@ -7,6 +7,8 @@ import DropBoxView from "@/views/DropBoxView";
 import SnackBarView from "@/views/SnackBarView";
 import NavigationView from "@/views/NavigationView";
 import TabView from "@/views/TabView";
+import ButtonView from "@/views/ButtonView";
+import InputView from "@/views/InputView";
 import NotFound from "@/views/NotFound";
 
 const routes = [
@@ -49,6 +51,16 @@ const routes = [
     path: "/tab",
     name: "TabView",
     component: TabView,
+  },
+  {
+    path: "/buttons",
+    name: "ButtonView",
+    component: ButtonView,
+  },
+  {
+    path: "/input",
+    name: "InputView",
+    component: InputView,
   },
   {
     path: "/:pathMatch(.*)*",

@@ -22,6 +22,12 @@
       <li>
         <router-link :to="{ name: 'TabView' }">Tabs</router-link>
       </li>
+      <li>
+        <router-link :to="{ name: 'ButtonView' }">Button</router-link>
+      </li>
+      <li>
+        <router-link :to="{ name: 'InputView' }">Input</router-link>
+      </li>
     </ul>
   </div>
 </template>
