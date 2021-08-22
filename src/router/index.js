@@ -9,6 +9,8 @@ import NavigationView from "@/views/NavigationView";
 import TabView from "@/views/TabView";
 import ButtonView from "@/views/ButtonView";
 import InputView from "@/views/InputView";
+import TextAreaView from "@/views/TextAreaView";
+import About from "@/views/About";
 import NotFound from "@/views/NotFound";
 
 const routes = [
@@ -61,6 +63,16 @@ const routes = [
     path: "/input",
     name: "InputView",
     component: InputView,
+  },
+  {
+    path: "/textarea",
+    name: "TextAreaView",
+    component: TextAreaView,
+  },
+  {
+    path: "/about",
+    name: "About",
+    component: About,
   },
   {
     path: "/:pathMatch(.*)*",

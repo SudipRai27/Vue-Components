@@ -5,7 +5,6 @@
       :type="inputType"
       :name="name"
       :id="name"
-      value="1"
       v-model="input"
       class="form-control"
       @input="$emit('update:modelValue', $event.target.value)"

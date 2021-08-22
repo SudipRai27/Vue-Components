@@ -28,8 +28,12 @@
       <li>
         <router-link :to="{ name: 'InputView' }">Input</router-link>
       </li>
+      <li>
+        <router-link :to="{ name: 'TextAreaView' }">Text Area</router-link>
+      </li>
+      <li>
+        <router-link :to="{ name: 'About' }">Simple About Page</router-link>
+      </li>
     </ul>
   </div>
 </template>
-
-
