@@ -10,6 +10,7 @@ import TabView from "@/views/TabView";
 import ButtonView from "@/views/ButtonView";
 import InputView from "@/views/InputView";
 import TextAreaView from "@/views/TextAreaView";
+import DropDownView from "@/views/DropDownView";
 import About from "@/views/About";
 import NotFound from "@/views/NotFound";
 
@@ -73,6 +74,11 @@ const routes = [
     path: "/about",
     name: "About",
     component: About,
+  },
+  {
+    path: "/dropdown",
+    name: "DropDownView",
+    component: DropDownView,
   },
   {
     path: "/:pathMatch(.*)*",
