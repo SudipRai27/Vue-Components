@@ -35,6 +35,11 @@
         <router-link :to="{ name: 'DropDownView' }">DropDown</router-link>
       </li>
       <li>
+        <router-link :to="{ name: 'AutoHidingNavigationView' }"
+          >Auto Hiding Naviagtion</router-link
+        >
+      </li>
+      <li>
         <router-link :to="{ name: 'About' }">Simple About Page</router-link>
       </li>
     </ul>
