@@ -12,6 +12,7 @@ import InputView from "@/views/InputView";
 import TextAreaView from "@/views/TextAreaView";
 import DropDownView from "@/views/DropDownView";
 import AutoHidingNavigationView from "@/views/AutoHidingNavigationView";
+import NavigationDropDownView from "@/views/NavigationDropDownView";
 import About from "@/views/About";
 import NotFound from "@/views/NotFound";
 
@@ -85,6 +86,11 @@ const routes = [
     path: "/auto-hiding-navigation",
     name: "AutoHidingNavigationView",
     component: AutoHidingNavigationView,
+  },
+  {
+    path: "/navigation-dropdown",
+    name: "NavigationDropDownView",
+    component: NavigationDropDownView,
   },
   {
     path: "/:pathMatch(.*)*",
