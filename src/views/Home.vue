@@ -1,7 +1,7 @@
 <template>
   <div>
-    <h2>Please click one of the following components</h2>
-    <ul>
+    <h2 class="m-4">Please click one of the following components</h2>
+    <ul class="m-4">
       <li>
         <router-link :to="{ name: 'SidebarHome' }">Sidebar</router-link>
       </li>
@@ -33,6 +33,21 @@
       </li>
       <li>
         <router-link :to="{ name: 'DropDownView' }">DropDown</router-link>
+      </li>
+      <li>
+        <router-link :to="{ name: 'AutocompleteView' }"
+          >Autocomplete</router-link
+        >
+      </li>
+      <li>
+        <router-link :to="{ name: 'AutoFormatInputView' }"
+          >Auto Format Input</router-link
+        >
+      </li>
+      <li>
+        <router-link :to="{ name: 'PricingComponentView' }"
+          >Pricing Component</router-link
+        >
       </li>
       <li>
         <router-link :to="{ name: 'AutoHidingNavigationView' }"

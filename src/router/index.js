@@ -13,6 +13,9 @@ import TextAreaView from "@/views/TextAreaView";
 import DropDownView from "@/views/DropDownView";
 import AutoHidingNavigationView from "@/views/AutoHidingNavigationView";
 import NavigationDropDownView from "@/views/NavigationDropDownView";
+import AutocompleteView from "@/views/AutocompleteView";
+import PricingComponentView from "@/views/PricingComponentView";
+import AutoFormatInputView from "@/views/AutoFormatInputView";
 import About from "@/views/About";
 import NotFound from "@/views/NotFound";
 
@@ -91,6 +94,21 @@ const routes = [
     path: "/navigation-dropdown",
     name: "NavigationDropDownView",
     component: NavigationDropDownView,
+  },
+  {
+    path: "/autocomplete",
+    name: "AutocompleteView",
+    component: AutocompleteView,
+  },
+  {
+    path: "/pricing-component",
+    name: "PricingComponentView",
+    component: PricingComponentView,
+  },
+  {
+    path: "/auto-format-input",
+    name: "AutoFormatInputView",
+    component: AutoFormatInputView,
   },
   {
     path: "/:pathMatch(.*)*",
